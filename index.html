@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Salary Prediction</title>
+</head>
+<body>
+    <h2>Enter Employee Details</h2>
+    <form action="/predict" method="POST">
+        Age: <input type="number" name="age" required><br><br>
+        Workclass:
+        <select name="workclass">
+            <option value="Private">Private</option>
+            <option value="Self-emp-not-inc">Self-emp-not-inc</option>
+            <option value="Local-gov">Local-gov</option>
+        </select><br><br>
+        Education:
+        <select name="education">
+            <option value="Bachelors">Bachelors</option>
+            <option value="HS-grad">HS-grad</option>
+            <option value="Some-college">Some-college</option>
+        </select><br><br>
+        Occupation:
+        <select name="occupation">
+            <option value="Tech-support">Tech-support</option>
+            <option value="Craft-repair">Craft-repair</option>
+            <option value="Exec-managerial">Exec-managerial</option>
+        </select><br><br>
+        Hours per week: <input type="number" name="hours_per_week" required><br><br>
+
+        <input type="submit" value="Predict Salary">
+    </form>
+</body>
+</html>
